@@ -28,53 +28,14 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.4038940050501252
     },
-    "729478ae-d067-4e0c-a753-66c2e9efb625": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "729478ae-d067-4e0c-a753-66c2e9efb625",
-      "material": {
-        "color": "#7611b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box",
-      "position": [
-        0.2548922378079085,
-        -0.061414970508715416,
-        0.1552919623413082
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.17653091083801178,
-        0.17653091083801178,
-        0.17653091083801178
-      ],
-      "parentId": "9046ccc3-be4b-46a9-8129-35d97f930380",
-      "order": 1.4038940050501252
-    },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
         "type": "perspective",
         "xr": {
-          "desktop": "3D",
-          "xrCameraType": "3dOnly",
-          "headset": "disabled"
+          "desktop": "disabled",
+          "xrCameraType": "world",
+          "headset": "disabled",
+          "phone": "AR"
         }
       },
       "components": {},
@@ -134,14 +95,14 @@
       "id": "9046ccc3-be4b-46a9-8129-35d97f930380",
       "position": [
         0,
-        0.27968607290867237,
+        0.1463661314269506,
         0
       ],
       "rotation": [
+        -0.7071067811865475,
         0,
         0,
-        0,
-        1
+        0.7071067811865476
       ],
       "scale": [
         1,
@@ -158,38 +119,311 @@
       },
       "order": 3.3759662051149064
     },
-    "02a28de6-a90c-4f10-8a11-7ba40adcbc29": {
-      "id": "02a28de6-a90c-4f10-8a11-7ba40adcbc29",
+    "1ab23596-1996-4bec-92f8-7c66fedd7613": {
+      "id": "1ab23596-1996-4bec-92f8-7c66fedd7613",
       "position": [
-        -0.28505625961964176,
-        -0.27968607290867237,
-        0.07109791994908977
+        0,
+        0.26629007134457894,
+        0.43972336749781155
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.6811295715814861,
+        0.8851887754972586,
+        0.6811295715814861
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/Los_del_Sur.mp4"
+        }
+      },
+      "parentId": "9046ccc3-be4b-46a9-8129-35d97f930380",
+      "components": {
+        "9672cd45-317e-4ee5-b6e3-578ef40b116b": {
+          "id": "9672cd45-317e-4ee5-b6e3-578ef40b116b",
+          "name": "Video Toggle Button",
+          "parameters": {
+            "videoEntity": {
+              "type": "entity",
+              "id": "1ab23596-1996-4bec-92f8-7c66fedd7613"
+            },
+            "playIcon": {
+              "type": "entity",
+              "id": "096b32d1-3825-41a4-ba38-52a8e7258fac"
+            },
+            "imageTarget": {
+              "type": "entity",
+              "id": "9046ccc3-be4b-46a9-8129-35d97f930380"
+            }
+          }
+        }
+      },
+      "name": "Video",
+      "order": 4.961050011555761,
+      "videoControls": {}
+    },
+    "096b32d1-3825-41a4-ba38-52a8e7258fac": {
+      "id": "096b32d1-3825-41a4-ba38-52a8e7258fac",
+      "position": [
+        0,
+        -3.3306690738754696e-16,
+        0.01221705032037912
       ],
       "rotation": [
         0,
         0,
         0,
-        0.9999999999999998
+        1
       ],
       "scale": [
-        0.20318190060082078,
-        0.2031819006008209,
-        0.2031819006008209
+        1,
+        0.8039105188365038,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1ab23596-1996-4bec-92f8-7c66fedd7613",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 20,
+        "height": 90,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Icons/play.svg"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "icon play",
+      "order": 1.6341888024045836
+    },
+    "611fab6d-f759-4bbd-bad8-61e6b8d460cd": {
+      "id": "611fab6d-f759-4bbd-bad8-61e6b8d460cd",
+      "position": [
+        -0.23207182957638067,
+        -1.0460658837927589e-18,
+        -0.0047110619244540575
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.3295893826278305,
+        0.3295893826278305,
+        0.3295893826278305
       ],
       "geometry": null,
       "material": null,
       "parentId": "9046ccc3-be4b-46a9-8129-35d97f930380",
-      "components": {},
+      "components": {
+        "cd0e8b34-be86-4512-b57b-25f3604fda89": {
+          "id": "cd0e8b34-be86-4512-b57b-25f3604fda89",
+          "name": "Model Animation Toggle",
+          "parameters": {
+            "actionClip": "Jugar a todo"
+          }
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/model.glb"
+          "asset": "assets/Avatar.glb"
+        },
+        "animationClip": "*",
+        "loop": true
+      },
+      "name": "Avatar.glb",
+      "order": 9.2526199221887
+    },
+    "cff97404-f0d2-4315-bde7-d752d2b988b3": {
+      "id": "cff97404-f0d2-4315-bde7-d752d2b988b3",
+      "position": [
+        -0.09463863685360752,
+        0.04618252778889522,
+        -0.15407446263462063
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.16190736591861618,
+        0.16190736591861618,
+        0.16190736591861618
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "9046ccc3-be4b-46a9-8129-35d97f930380",
+      "components": {
+        "d70c4a28-7069-4ec4-9486-248acb81b9e3": {
+          "id": "d70c4a28-7069-4ec4-9486-248acb81b9e3",
+          "name": "Open URL 3D Object",
+          "parameters": {
+            "url": "https://wa.me/3054323796"
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Icons 3D/Whatssap3D.glb"
         },
         "animationClip": "",
         "loop": true
       },
-      "name": "model.glb",
-      "order": 2.6196696681674325
+      "name": "Whatssap3D.glb",
+      "order": 11.226797881864357
+    },
+    "87082d21-09ca-4c7a-bed9-6d590cfa4d75": {
+      "id": "87082d21-09ca-4c7a-bed9-6d590cfa4d75",
+      "position": [
+        0.043376818240225254,
+        1.5048469545707575e-17,
+        0.06777228183854489
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.13097599946823918,
+        0.13097599946823918,
+        0.13097599946823918
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "9046ccc3-be4b-46a9-8129-35d97f930380",
+      "components": {
+        "fa08cab5-c58c-42ce-9843-e57c374818d7": {
+          "id": "fa08cab5-c58c-42ce-9843-e57c374818d7",
+          "name": "Open URL UI Button",
+          "parameters": {
+            "url": "https://open.spotify.com/playlist/5P1HqG8L5ocNTYrixeDRMB?si=17a636726e7b41ca"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Spotify.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "Spotify",
+      "order": 12.358403989630464
+    },
+    "931372d4-7cd1-409f-922f-5a8e65df9d74": {
+      "id": "931372d4-7cd1-409f-922f-5a8e65df9d74",
+      "position": [
+        0.18109489328500392,
+        1.4829325989059058e-17,
+        0.06678534699848199
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.12996271048495048,
+        0.12996271048495048,
+        0.12996271048495048
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "9046ccc3-be4b-46a9-8129-35d97f930380",
+      "components": {
+        "af0e0324-c2e7-455d-a5bf-29e9c7bc1ae5": {
+          "id": "af0e0324-c2e7-455d-a5bf-29e9c7bc1ae5",
+          "name": "Open URL UI Button",
+          "parameters": {
+            "url": "https://www.instagram.com/nicoguzmanm_/"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Instagram_icon.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "Instagram",
+      "order": 13.699157616881028
+    },
+    "b860cff0-2abc-49eb-b378-4bf6fca6378f": {
+      "id": "b860cff0-2abc-49eb-b378-4bf6fca6378f",
+      "position": [
+        0.32323541519538984,
+        1.4411504388458026e-17,
+        0.06490364579370783
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.12836447089112246,
+        0.12836447089112246,
+        0.12836447089112246
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "9046ccc3-be4b-46a9-8129-35d97f930380",
+      "components": {
+        "fb3a5fb5-8166-4ef4-b796-5b00cb7d4814": {
+          "id": "fb3a5fb5-8166-4ef4-b796-5b00cb7d4814",
+          "name": "Open URL UI Button",
+          "parameters": {
+            "url": "https://www.youtube.com/@nicoelcrack10"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/YouTube.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "Imagen",
+      "order": 14.812512265140159
     }
   },
   "spaces": {
